@@ -1,0 +1,122 @@
+@import 'overlay';
+
+#PPMiniWin .mask {
+    display: block;
+}
+
+.paypal-config {
+    width:600px;
+    margin: 5em auto;
+    fieldset {
+        padding-left:10px;
+        border-left: 1px dotted #eee;
+    }
+
+    .helpbox {
+        margin-top:10px;
+        background-color: khaki;
+        color: gray;
+        padding: 5px 10px
+    }
+
+    .form-group {
+        textarea {
+            height:150px;
+            width:100%;
+        }
+    }
+
+    .bottom-space {
+        margin: 1.5rem 0;
+    }
+    .card-header {
+        cursor:pointer;
+    }
+    .paypal-button-PPLtBlue {
+        padding-top: 12px;
+        border-radius: 5px;
+        border: 1px solid #9DA3A6;
+        vertical-align: middle;
+        padding-right: 16px;
+        display: table-cell;
+        text-decoration: none;
+        background-color: #1B9DDb;
+        color: #fff;
+        font-size: 15px;
+        font-family: HelveticaNeueMedium,"Helvetica Neue Medium",Helvetica,Arial,sans-serif;
+        &:before {
+            content: "";
+            background: url(https://www.paypalobjects.com/images/shared/monogram@2x.png) 12px no-repeat #FFF;
+            background-size: 18.34px;
+            display: table-cell;
+            width: 40px;
+            height: 42px;
+            float: left;
+            margin-right: 16px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            margin-top: -12px;
+        }
+    }
+}
+
+#filters, #balances {
+    margin-top: 20px;
+}
+
+.transaction-details td {
+    padding: 5px;
+}
+
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+    cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+    outline: 2px solid #f00;
+}
+
+.ppmessages, .ppaltmessages {
+    padding: 10px;
+    border-bottom: 1px solid #dadada;
+}
+.ppmessages {
+    background: #fcfcfc;
+}
+.ppaltmessages {
+    background: #f4f4f4;
+}
+
+.messageRow {
+    padding: 10px;
+}
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+ul.pagination {
+    margin: 10px 0;
+    li {
+        background: none;
+        padding: 0;
+    }
+}
